@@ -21,12 +21,32 @@ class Loginpage extends StatelessWidget {
               style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),),
 
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.only(left: 10, right: 10),
               child: TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder()
                 ),
 
+              ),
+            ),
+
+            SizedBox(
+              width: 500,
+              child: Padding(
+                padding: const EdgeInsets.only(right: 8, left: 8,top: 20),
+                child: ElevatedButton(onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.yellow,
+                ), child: Text("Continue",
+                style: TextStyle(fontWeight: FontWeight.bold),),),
+              ),
+            ),
+            
+           SizedBox(
+              child: Padding(
+                padding: const EdgeInsets.only(left: 8,top: 15),
+                child: Text("By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.",
+                style: TextStyle(fontSize: 11),),
               ),
             )
 
